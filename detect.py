@@ -3,6 +3,7 @@ import argparse
 import time
 import shutil
 from pathlib import Path
+import pandas as pd
 
 import cv2
 import torch
