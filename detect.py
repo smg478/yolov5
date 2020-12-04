@@ -198,7 +198,7 @@ def detect(save_img=False):
     finl_results['width'] = 1024
     finl_results['height'] = 1024
     #finl_results.to_csv('submission.csv', index=False)
-    finl_results.to_csv(f'subs/{outfn}-{len(finl_results)}.csv', index=False)
+    finl_results.to_csv(f'subs/{outfn}.csv', index=False)
     print(finl_results['class'].value_counts())
     print(f"total counts:{len(finl_results)}")
 
