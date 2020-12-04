@@ -177,6 +177,7 @@ def detect(save_img=False):
 
         }
 
+        print(result)
         results.append(result)
 
     # if save_txt or save_img:
@@ -190,7 +191,9 @@ def detect(save_img=False):
     ######################
     append_data = []
     for i in range(len(results)):
+        print(i, results[i])
         df = pd.DataFrame(results[i], columns=['image_id', 'class', 'score', 'xmin', 'ymin', 'xmax', 'ymax'])
+        print(df)
         append_data.append(df)
 
     finl_results = pd.concat(append_data)
